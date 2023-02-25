@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Burger Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="burger_logo_1.jpeg" class="logo" width="200" height="200"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="menu.png" width="30px" height="30px" class="menu-icon">
+        </header>
+
+
+        <div class="content">
+            <div class="textBox">
+                <br><br><br><br>
+                <h2>Get ready to sink your teeth into the juiciest most delicious burgers at <br><span>Mr. Burger Singh</span></h2><br><br>
+                <p>
+                    *Satisfy your cravings with our delicious, handcrafted burgers made with fresh ingredients.<br><br>
+                    *Join the Burger Party! Our menu offers a wide range of classic and specialty burgers that will please all taste buds<br><br>
+                    *From traditional Margherita to unique gourmet creations, we have a pizza for every appetite.
+                </p><br>
+                <a href="" class="btn">Explore More &#8594;</a>
+            </div>
+            <div class="imgBox">
+                <img src="pic1.png" class="Burger" width="500" height="300">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pic1.png" onclick="imgSlider('pic1.png');changeCirclecolor('#017143')"></li>
+            <li><img src="pic2.png" onclick="imgSlider('pic2.png');changeCirclecolor('#f05e88')"></li>
+            <li><img src="pic3.png" onclick="imgSlider('pic3.png');changeCirclecolor('#802266')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Burger').src = anything;
+        }
+        function changeCirclecolor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
+<!-- https://www.freepnglogos.com/pics/burger -->
